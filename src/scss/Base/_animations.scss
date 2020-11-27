@@ -1,0 +1,124 @@
+    // Chứa các keyframes , @media
+    @media(max-width:1200px) {
+        .navbar {
+            .navbar-collapse {
+                .navbar-nav {
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .nav-item {
+                        padding: 0;
+
+                        .nav-link {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width:992px) {
+        #menu {
+            .col-12 {
+                .submenu {
+                    display: flex !important;
+                    column-count: 4;
+                }
+            }
+        }
+
+        .navbar {
+            margin: 0;
+            padding: 0;
+
+            .navbar-collapse {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 100%;
+                z-index: 5;
+                background: $color-light;
+                border-top: 1px solid $graphite;
+                padding: 6px 0;
+
+                .navbar-nav {
+                    display: block;
+                    padding-left: 30px;
+
+                    .nav-item {
+                        height: 50px;
+
+                        .nav-link {
+                            border: none !important;
+                        }
+                    }
+
+                    .img-line {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        #video {
+            margin-top: 0 !important;
+
+            .author {
+                display: none !important;
+            }
+        }
+
+        .tong-hop-new,
+        .quang-cao-3,
+        .list-quang-cao {
+            display: none !important;
+        }
+
+        .tin-doc-nhieu {
+            position: unset !important;
+        }
+    }
+
+    @media(max-width:768px) {
+        .trending {
+
+            .carousel-control-next,
+            .carousel-control-prev {
+                display: none;
+            }
+        }
+
+        #menu {
+            .col-12 {
+                .submenu {
+                    display: block !important;
+                    column-count: 2;
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        #new-hot {
+            .latest-news {
+                .link-new-hot {
+                    display: none;
+                }
+            }
+        }
+
+        .xem-them {
+            display: none;
+        }
+    }
+
+    @media(max-width:576px) {}
+
+    @media(max-width:400px) {
+        .owl-carousel {
+            margin-left: -25px !important;
+        }
+    }

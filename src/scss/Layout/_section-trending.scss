@@ -1,0 +1,60 @@
+.trending {
+    font-size: $font-size-11;
+    height: 35px;
+    align-items: center;
+
+    .carousel {
+        .carousel-inner {
+            margin-left: -10%;
+            .carousel-item {
+                a {
+                    white-space: nowrap;
+                    color: $graphite;
+                    list-style: none;
+                }
+
+                &:hover a {
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+        }
+
+        .carousel-control-prev {
+            right: 30px;
+            left: unset;
+
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            background: $color-button-prev-next;
+            width: 20px;
+            height: 20px;
+            color: black;
+
+        }
+    }
+
+
+
+    // Animation
+    // ul {
+    //     li {
+
+    //         white-space: nowrap;
+    //         position: relative;
+    //         animation-delay: 3s;
+    //         animation: myAnimation 20s ease-in-out infinite;
+    //         -webkit-animation: myAnimation 20s ease-out infinite;
+    //     }
+    // }
+    // @keyframes myAnimation {
+    //     from {right: 0px;}
+    //     to {right:100%;}
+    // }
+    // @-webkit-keyframes myAnimation {
+    //     from {right: 0px;}
+    //     to {right:100%;}
+    // }
+}

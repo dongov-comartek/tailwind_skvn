@@ -1,0 +1,14 @@
+// Lưu trữ tất cả các thẻ:  *, body, html
+// Base bao gồm những tiêu chuẩn styles như resets,
+// các rule và phần chung thường được sử dụng xuyên suốt project.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:$font-family-medium;
+    min-height: 100vh;
+    font-size:$font-medium !important;
+}
