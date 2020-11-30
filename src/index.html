@@ -21,12 +21,13 @@
     <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.theme.default.min.css" type="text/css">
     <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.theme.default.css" type="text/css">
-    
+
 </head>
 
 <body>
-    <nav class="bg-white flex items-center shadow">
-        <div class="container mx-auto xl:px-4">
+    <!-- navbar -->
+    <nav class="bg-white flex items-center shadow relative lg:sticky">
+        <div class="container mx-auto xl:px-4 ">
             <div class=" grid grid-cols-2 gap-4 pl-2 sm:flex md:flex lg:flex h-24">
                 <div class="col-start-1 col-end-2 flex justify-center items-center">
                     <img src="./images/logo/lOGO.png" alt="">
@@ -40,59 +41,54 @@
                         </svg>
                     </button>
                 </div>
-                <div class=" hidden  top-navbar w-full lg:flex"  id="navigation">
-                    <ul class="flex w-full text-sm justify-center">
+                <div class=" hidden absolute top-navbar bg-gray-400 lg:bg-white w-full lg:flex lg:sticky left-0"
+                    id="navigation">
+                    <ul class="block lg:flex w-full text-sm lg:justify-center h-full pl-3">
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none  border-t  hover:border-blue-500 border-white h-full flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 border-r tracking-wide" href="#">thời sự</a>
+                            class="no-underline hover:text-blue-500 focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">thời sự</a>
                         </li>
                         <li
-                            class="no-underline  hover:text-blue-500 focus:outline-none  border-t  hover:border-blue-500 border-white h-full flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 border-r tracking-wide" href="#">chữa bệnh</a>
+                            class="no-underline  hover:text-blue-500 focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">chữa bệnh</a>
                         </li>
                         <li
-                            class="no-underline  hover:text-blue-500 focus:outline-none  border-t  hover:border-blue-500 border-white  h-full flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 border-r tracking-wide" href="#">phòng bệnh</a>
+                            class="no-underline  hover:text-blue-500 focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white  h-full flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">phòng bệnh</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none h-full border-t  hover:border-blue-500 border-white  flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 border-r tracking-wide" href="#">đông y</a>
+                            class="no-underline hover:text-blue-500 focus:outline-none h-full lg:border-t  hover:border-blue-500 lg:border-white  flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">đông y</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none border-t  hover:border-blue-500 border-white h-full flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 border-r tracking-wide" href="#">chăm sóc đặc biệt</a>
+                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">chăm sóc đặc
+                                biệt</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none border-t  hover:border-blue-500 border-white h-full flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 border-r tracking-wide" href="#">giới tính</a>
+                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">giới tính</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none border-t  hover:border-blue-500 border-white h-full flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 border-r tracking-wide" href="#">tâm lý</a>
+                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">tâm lý</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none border-t  hover:border-blue-500 border-white h-full flex items-center">
-                            <a class="uppercase xl:px-3 md:px-1 tracking-wide" href="#">dinh dưỡng</a>
+                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            <a class="uppercase xl:px-3 md:px-1 tracking-wide py-1" href="#">dinh dưỡng</a>
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
     </nav>
-    <script>
-        $(document).ready(function() {
-        $(".nav-toggler").each(function(_, navToggler) {
-          var target = $(navToggler).data("target");
-          $(navToggler).on("click", function() {
-            $(target).animate({
-              height: "toggle"
-            });
-          });
-        });
-      });
-      
-      </script>
+
+
+
+   
+
+    <script src="./js/menu_nav.js" type="text/javascript"></script>
 </body>
 
 </html>
