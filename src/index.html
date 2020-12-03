@@ -10,7 +10,7 @@
         content="Sức khỏe Việt Nam - Cẩm nang chăm sóc sức khỏe gia đình mỗi ngày, cách phòng tránh bệnh cho gia đình, trẻ nhỏ. Tin tức mới nhất về y học Việt Nam và thế giới.">
 
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
@@ -22,14 +22,16 @@
     <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.theme.default.min.css" type="text/css">
     <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.theme.default.css" type="text/css">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="bg-white flex items-center shadow relative lg:sticky">
-        <div class="container mx-auto xl:px-4 ">
-            <div class=" grid grid-cols-2 gap-4 pl-2 sm:flex md:flex lg:flex h-24">
-                <div class="col-start-1 col-end-2 flex justify-center items-center">
+        <div class="container mx-auto px-4 ">
+            <div class=" grid grid-cols-2 sm:mx-6 flex sm:flex md:flex lg:flex h-24">
+                <div class="col-start-1 col-end-2 sm:pl-4 flex  items-center">
                     <img src="./images/logo/lOGO.png" alt="">
                 </div>
                 <div class="text-white flex items-center pr-2  rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
@@ -41,54 +43,294 @@
                         </svg>
                     </button>
                 </div>
-                <div class=" hidden absolute top-navbar bg-gray-400 lg:bg-white w-full lg:flex lg:sticky left-0"
+                <div class=" hidden z-20 absolute lg:block top-full top-navbar bg-gray-100 lg:bg-white w-full lg:flex lg:sticky left-0"
                     id="navigation">
                     <ul class="block lg:flex w-full text-sm lg:justify-center h-full pl-3">
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            class="no-underline hover:text-primary focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">thời sự</a>
                         </li>
                         <li
-                            class="no-underline  hover:text-blue-500 focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            class="no-underline  hover:text-primary focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">chữa bệnh</a>
                         </li>
                         <li
-                            class="no-underline  hover:text-blue-500 focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white  h-full flex items-center">
+                            class="no-underline  hover:text-primary focus:outline-none  lg:border-t  hover:border-blue-500 lg:border-white  h-full flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">phòng bệnh</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none h-full lg:border-t  hover:border-blue-500 lg:border-white  flex items-center">
+                            class="no-underline hover:text-primary focus:outline-none h-full lg:border-t  hover:border-blue-500 lg:border-white  flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">đông y</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            class="no-underline hover:text-primary focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">chăm sóc đặc
                                 biệt</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            class="no-underline hover:text-primary focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">giới tính</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            class="no-underline hover:text-primary focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 lg:border-r tracking-wide py-1" href="#">tâm lý</a>
                         </li>
                         <li
-                            class="no-underline hover:text-blue-500 focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
+                            class="no-underline hover:text-primary focus:outline-none lg:border-t  hover:border-blue-500 lg:border-white h-full flex items-center">
                             <a class="uppercase xl:px-3 md:px-1 tracking-wide py-1" href="#">dinh dưỡng</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </nav>
+    <!-- trening -->
+    <section class="bg-gray-200 h-8">
+        <div class="container mx-auto px-4 h-full">
+            <div class="grid grid-cols-1 gap-4 sm:mx-6 flex items-center h-full w-auto">
+                <div class="col-end-1 pl-4">
+                    <p>Trending ></p>
+                </div>
+                <div class="caroufredsel_wrapper w-auto">
+                    <div id="carousel" class="w-full block">
+                        <div class="text-gray-500 text-11 w-full block">
+                            <a href="#">Sạt lở ở Quảng Nam</a>
+                        </div>
+                        <div class="text-gray-500 text-11 w-full block">
+                            <a href="#">Bầu cử Tổng thống Mỹ 2020</a>
+                        </div>
+                        <div class="text-gray-500 text-11 w-full block">
+                            <a href="#">Lũ lụt ở Miền Trung</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hot new -->
+    <section class="mt-8">
+        <div class="container mx-auto pl-4 pr-4">
+            <div class="grid grid-cols-12 mx-0 px-0 sm:mx-6 sm:px-4">
+                <div class="col-start-1 col-end-13 md:col-start-1 md:col-end-10">
+                    <div class="grid grid-cols-12 gap-2 ">
+                        <div class="col-start-1 col-end-13 md:col-start-1 md:col-end-9 ">
+                            <div class="block overflow-hidden relative pt-2-3">
+                                <a class="w-full absolute m-auto inset-0 float-left" href="#">
+                                    <img src="./images/new-hot/News-11-750x430.png" alt="">
+                                </a>
+                            </div>
+                            <div class="pt-2">
+                                <p class="font-medium no-underline  hover:text-primary focus:outline-none h-full flex">
+                                    <a href="#">Bị phản đối, đàn thiên nga vừa thả ở Hồ Gươm đã "bay" sang hồ Thiền
+                                        Quang</a></p>
+                                <p class="font-light pt-1">
+                                    Lãnh đạo Công ty TNHH MTV Thoát nước Hà Nội vừa xác nhận với PV báo Người Đưa Tin về
+                                    việc đơn vị vừa bắt 12 con thiên nga được thả xuống Hồ Gươm lên để chuyển sang hồ
+                                    Thiền Quang...
+                                </p>
+                            </div>
+                            <div class="pt-3 hidden md:block">
+                                <ul class="pl-8">
+                                    <li class="font-medium text-13 list-square text-primary">
+                                        <a class="text-gray-900 hover:text-primary focus:outline-none" href="#">Tin nóng thế giới ngày mới 6/2: Nga, Mỹ đấu khẩu tại Liên Hợp Quốc về Syria</a>
+                                    </li>
+                                    <li class="font-medium text-13 list-square text-primary">
+                                        <a class="text-gray-900  hover:text-primary focus:outline-none" href="#">Lần đầu tiên trong lịch sử tố tụng Việt Nam: Được giải oan giết vợ sau khi qua đời 5 năm (kỳ 1)</a>
+                                    </li>
+                                    <li class="font-medium text-13 list-square text-primary ">
+                                        <a class="text-gray-900 hover:text-primary focus:outline-none" href="#">Lần đầu tiên trong lịch sử tố tụng Việt Nam: Được giải oan giết vợ sau khi qua đời 5 năm (kỳ 2)</a>
+                                    </li>
+                                </ul>
 
+                            </div>
+                        </div>
+                        <div class="col-start-1 col-end-13 md:col-start-9 md:col-end-13 ">
+                            <ul class="font-medium text-13">
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Hoa hậu Phan Hoàng Thu: "Vietjet đã quá “cơ hội” khi tranh thủ</a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Cha mẹ nên làm gì để phòng chống bệnh hô hấp mùa đông cho trẻ?</a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Mỹ Tâm, Hồ Ngọc Hà giành "cú đúp" trong đề cử giải Cống hiến 2018</a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Tổ chức giải thưởng tôn vinh những người hoạt động vì môi trường</a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Bán tháo ồ ạt, vốn hóa thị trường 'bốc hơi' thêm 220.000 tỷ đồng</a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Ông Dương Vũ Lâm bất ngờ với thông tin được chia thưởng cao nhất trong
+                                        đội U23 Việt Nam</a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Chứng khoán Mỹ đỏ lửa ngay giữa lúc Trump ca ngợi kinh tế</a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Nga bị tố đưa tên lửa đến sát sườn NATO, Trump chê hệ thống y tế Anh,
+                                        đoàn biểu diễn 140 </a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">HLV Miguel Rodrigo đánh thức niềm tự hào dân tộc trong các cầu thủ, giúp
+                                        họ thi đấu bùng nổ </a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none border-b h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Phiến quân tại tỉnh Idlib phát hiện chiếc Su-25 bay thấp, phóng tên lửa
+                                    </a>
+                                </li>
+                                <li
+                                    class="no-underline  hover:text-primary focus:outline-none h-full flex items-center pt-1">
+                                    <a class="pb-2" href="#">Chỉ số Nikkei 225 trên sàn chứng khoán Nhât hiện giảm tới 7% trong phiên
+                                        chiều </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block md:col-start-10 md:col-end-13 pl-2 ">
+                    <div class="block overflow-hidden relative pt-full h-1/4 ">
+                        <a class="w-full absolute m-auto inset-0 float-left" href="#"><img src="./images/quangcao/qc-1.png" alt=""></a>
+                    </div>
+                    <div class="block overflow-hidden relative pt-full">
+                        <a class="w-full absolute m-auto inset-0 float-left" href="#"><img src="./images/quangcao/qc-2.png" alt=""></a>
+                    </div>
 
-
-   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-secondary">
+        <div class="container  mx-auto sm:px-4 py-4">
+            <div class="grid grid-cols-3 sm:mx-6 ">
+                <div class="col-span-12 lg:col-start-1 lg:col-end-2 text-gray-500 px-4 text-13">
+                    <img src="./images/logo/lOGO.png" alt="">
+                    <p>Báo điện tử Sức Khỏe Việt Nam - www.suckhoevietnam.net.vn</p>
+                    <p>Giấy phép số 38/GP-BTTTT của Bộ TT&TT cấp ngày 25/1/2016</p>
+                    <p>Tổng biên tập: Nguyễn Tiến Thanh</p>
+                    <p>Vui lòng dẫn nguồn "suckhoevietnam.net.vn" khi bạn phát hành lại thông tin từ website này.</p>
+                </div>
+                <div class="col-span-12 lg:col-start-2 lg:col-end-12 px-4">
+                    <ul
+                        class="block pl-5 col-count-2 col-count-2 lg:pl-0 sm:flex justify-between text-gray-500 mx-auto ">
+                        <li class="pt-4 list-square text-primary text-13">
+                            <a class="uppercase text-white" href="#">sức khỏe</a>
+                            <ul class="text-13 text-gray-500">
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Tư Vấn</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Làm đẹp</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Thuốc & TPCN</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Ung Thư</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Thói quen tốt</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pt-4 list-square text-primary text-13">
+                            <a class="uppercase text-white" href="#">đông y</a>
+                            <ul class="text-13 text-gray-500">
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Bấm huyệt</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Phương pháp đặc biệt</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Tinh hoa thuốc nam</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Đông y thực hành</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Thói quen tốt</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pt-4 list-square text-primary text-13">
+                            <a class="uppercase text-white" href="#">dinh dưỡng</a>
+                            <ul class="text-13 text-gray-500">
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Mân cơm an toàn</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Ngon mà bổ</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Ăn chay</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Ung Thư</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Thói quen tốt</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pt-4 list-square text-primary text-13">
+                            <a class="uppercase text-white" href="#">wiki y tế</a>
+                            <ul class="text-13 text-gray-500">
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Kiến trúc</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Nghiên cứu</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Số liệu</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Ung Thư</a>
+                                </li>
+                                <li class="no-underline hover:text-primary focus:outline-none pt-2">
+                                    <a href="#">Thói quen tốt</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="h-12 bg-primary m-0 p-0">
+        <div class="row-auto items-center flex h-full">
+            <p class="text-xs text-white text-center w-full ">Quản lý và xuất bản bởi Báo Đời sống & Pháp luật</p>
+        </div>
+    </footer>
 
     <script src="./js/menu_nav.js" type="text/javascript"></script>
+    <script src="./js/jquery.carouFredSel-6.2.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(carousel).carouFredSel({
+                items: 2,
+                direction: "left",
+                scroll: {
+                    items: 1,
+                    // easing: "elastic",
+                    duration: 400,
+                    pauseOnHover: true
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
