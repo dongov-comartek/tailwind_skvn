@@ -88,10 +88,13 @@ module.exports = {
     },
     animation: {
       none: "none",
+      wiggle: 'wiggle 1s ease-in-out infinite',
       spin: "spin 1s linear infinite",
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
+      marquee: "marquee 45s linear infinite",
+
     },
     backgroundColor: (theme) => theme("colors"),
     backgroundImage: {
@@ -228,6 +231,7 @@ module.exports = {
       ],
     },
     fontSize: {
+      11: ["11px", { lineHeight: "1.25rem" }],
       13: ["13px", { lineHeight: "1.25rem" }],
       xs: ["0.75rem", { lineHeight: "1rem" }],
       sm: ["0.875rem", { lineHeight: "1.25rem" }],
@@ -438,6 +442,10 @@ module.exports = {
           opacity: ".5",
         },
       },
+      wiggle: {
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+        '50%': { transform: 'rotate(3deg)' },
+        },
       bounce: {
         "0%, 100%": {
           transform: "translateY(-25%)",
@@ -713,6 +721,25 @@ module.exports = {
       "-3/4": "-75%",
       "-full": "-100%",
     }),
+  
+    padding: (theme) => ({
+      auto: "auto",
+      ...theme("spacing"),
+      "1-2": "50%",
+      "1-3": "33.333333%",
+      "2-3": "66.666667%",
+      "1-4": "25%",
+      "2-4": "50%",
+      "3-4": "75%",
+      full: "100%",
+      "-1-2": "-50%",
+      "-1-3": "-33.333333%",
+      "-2-3": "-66.666667%",
+      "-1-4": "-25%",
+      "-2-4": "-50%",
+      "-3-4": "-75%",
+      "-full": "-100%",
+    }),
     width: (theme) => ({
       auto: "auto",
       ...theme("spacing"),
@@ -948,5 +975,5 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-multi-column')(), // no options to configure
-  ],
+  ]
 };
